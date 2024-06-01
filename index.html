@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #score {
+            font-size: 2em;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #score img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+            
+        }
+        #clickImage {
+            width: 200px;  /* Увеличиваем ширину изображения */
+            height: 200px; /* Увеличиваем высоту изображения */
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        #clickImage:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0 <img src="coin.png" alt="Coin"></div>
+    <img id="clickImage" src="click_image.png" alt="Click me!">
+
+    <script src="clicker.js"></script>
+</body>
+</html>
